@@ -1,0 +1,202 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    display: flex; /* Para el encabezado */
+    flex-direction: column; /* Para organizar el contenido principal */
+    align-items: stretch; /* Para que los elementos ocupen todo el ancho */
+}
+
+#marco {
+    width: auto;
+    border: 1px dotted black;
+    margin: 0% 2%;
+    padding: 15px;
+    background-image: url(imagenes/fondo.jpg);
+    display: flex; /* Conviértelo en un contenedor flex */
+    flex-direction: column; /* Para que los elementos internos se apilen verticalmente */
+    align-items: stretch; /* Estirar los elementos a lo ancho */
+}
+
+    .logo {
+        max-width: 100px; /* Reducido para que quepa mejor en la esquina */
+        height: auto;
+        border-radius: 50%;
+    }
+
+#encabezado {
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, h1 a la derecha */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: rgb(1, 176, 241);
+    text-align: end;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 5px 5px 15px black; /* Sombra a la imagen */
+}
+
+hr {
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+#leyenda {
+    text-align: right;
+    color: black;
+    font-size: 0.8em;
+    align-self: flex-end; /* Alinea a la derecha dentro del body flex */
+    background-color: white;
+    display: inline-block;
+}
+
+h2 {
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-decoration: underline
+}
+
+
+#definicion {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: black solid 5px;
+    padding: 15px; /* Espaciado interno */
+}
+
+.definicion_html, .definicion_css, .definicion_js {
+    background-color: #fff;
+    padding: 10px; /* Aumentado el padding */
+    text-align: center; /* Centrar el texto inicialmente */
+    flex: 1 0 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: black solid 1px;
+    display: flex; /* Para alinear verticalmente el contenido */
+    flex-direction: column; /* Para apilar título, texto e imagen */
+    align-items: center; /* Centrar horizontalmente ------- */
+}
+
+.definicion_html {
+    background-color: rgb(242, 236, 236); /* Color HTML */
+}
+
+.definicion_css {
+    background-color: rgb(230, 235, 238); /* Color CSS */
+}
+
+.definicion_js {
+    background-color: rgb(233, 237, 223); /* Color JavaScript */
+}
+
+h3 {
+    margin-top: 0px;
+    text-align: center;
+    padding: 10px; /* Espaciado interno */
+    color: white;
+    width: 95%; /* Para que el fondo de color ocupe todo el ancho */
+}
+
+.definicion_html h3 {
+    background-color: rgb(218, 69, 39); /* Color HTML */
+}
+
+.definicion_css h3 {
+    background-color: rgb(5, 119, 190); /* Color CSS */
+}
+
+.definicion_js h3 {
+    background-color: rgb(105, 167, 23); /* Color JavaScript */
+}
+
+.definicion_html p, .definicion_css p, .definicion_js p {
+    text-align: start; /* Alinea el texto a la izquierda dentro de cada cuadro */
+    margin-top: auto; /* Empuja la imagen hacia abajo */
+    margin-bottom: 10px;
+    padding: 0 10px; /* Añade un poco de padding a los lados del texto */
+}
+
+.definicion_html img, .definicion_css img, .definicion_js img {
+    max-width: 80px;
+    height: auto;
+    margin-top: auto; /* Empuja la imagen hacia abajo */
+    margin-bottom: 10px;
+}
+
+
+
+#analogia {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: black solid 5px;
+    padding: 15px; /* Espaciado interno */
+}
+
+.analogia_html, .analogia_css, .analogia_js {
+    background-color: #fff;
+    padding: 15px;
+
+    flex: 1 0 250px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: black solid 1px;
+}
+
+.analogia_html {
+    background-color: rgb(242, 236, 236); /* Color HTML */
+}
+
+.analogia_css {
+    background-color: rgb(230, 235, 238); /* Color CSS */
+}
+
+.analogia_js {
+    background-color: rgb(233, 237, 223); /* Color JavaScript */
+}
+
+.analogia_html h3 {
+    background-color: rgb(218, 69, 39); /* Color HTML */
+}
+
+.analogia_css h3 {
+    background-color: rgb(5, 119, 190); /* Color CSS */
+}
+
+.analogia_js h3 {
+    background-color: rgb(105, 167, 23); /* Color JavaScript */
+}
+
+.casa {
+    width: 50%;
+    display: block; /* Para usar márgenes automáticos */
+    margin: 10px auto; /* Centra horizontalmente (auto a izquierda y derecha) */
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3); /* Sombra a la imagen */
+}
+
+#resumen {
+    background-color: rgb(249, 249, 249); /* Un tono claro azulado */
+    border: 1px solid #b3e5fc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 15px black; /* Sombra a la imagen */
+}
+
+#resumen p {
+    font-style: italic;
+    color: #555;
+    text-align: center;
+}
